@@ -1,0 +1,126 @@
+@import "variables";
+@import "basics";
+@import "mixins";
+
+body {
+  margin: 0px !important;
+}
+.app {
+  margin: 0 !important;
+}
+
+.header {
+  padding-top: 60px;
+  text-align: center;
+  margin: 0px !important;
+  background-color: $hederColor;
+  font-family: 'Anton', sans-serif;
+}
+
+.header span {
+  font-size: 45px;
+  display: block;
+  color: $textColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  background-color: $bodyColor;
+  align-items: center;
+}
+
+.search {
+  text-align: center;
+  color: $textColor;
+}
+
+
+.search .title{
+    font-size: 16px;
+}
+
+.search .subtitle{
+    font-size: 14px;
+    color: $subtitleColor;
+}
+
+.form {
+  display: flex;
+  @include mQ(0, 768px) {
+    flex-direction: column;
+  }
+}
+.search .input {
+  width: 400px;
+  height: 30px;
+  padding: 3px;
+}
+
+.search .input input {
+  width: 400px;
+  height: 30px;
+}
+
+.search .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  padding: 3px;
+  text-align: "center";
+  background-color: $buttonColor;
+  text-decoration: none;
+  text-decoration: none;
+  height: 30px;
+  margin-top: 3px;
+  @include mQ(0, 768px) {
+    width: 400px;
+    margin-left: 4px;
+  }
+}
+
+.search .button a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: $textColor;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  text-align: "center";
+  align-items: center;
+  color: $textColor;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  text-align: "center";
+  align-items: center;
+  background-color: $bodyColor;
+  height: 600px;
+  color: $textColor;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  text-align: "center";
+  align-items: center;
+  background-color: $bodyColor;
+  height: 600px;
+  
+}
+
+
+.loading p,  .error p, .error a{
+    color: $textColor;
+  }
+

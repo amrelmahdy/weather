@@ -1,0 +1,18 @@
+@mixin mQ($min...) {
+  @if length($min) == 1 {
+    @media (min-width: nth($min, 1)) {
+      @content;
+    }
+  } @else {
+    @media (min-width: nth($min, 1)) and (max-width: nth($min, 2)) {
+      @content;
+    }
+  }
+}
+
+@mixin trim($width) {
+  width: #{$width};
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

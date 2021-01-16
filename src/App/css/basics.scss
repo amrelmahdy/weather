@@ -1,0 +1,46 @@
+@for $i from 1 through 1000{
+  .height-#{$i} {
+    height: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through 1000{
+  .margin-top-#{$i} {
+    margin-top: #{$i}px;
+  }
+}
+
+@for $i from 1 through 1000{
+  .margin-bottom-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+}
+
+
+
+@for $i from 1 through 1000{
+  .width-#{$i}{
+    width: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through 1000{
+  .width-percentage-#{$i}{
+    width: #{$i + "%"};
+  }
+}
+
+@for $i from 1 through 1000{
+  .font-#{$i}{
+    font-size: #{$i}px !important;
+  }
+}
+
+
+
+
+@for $i from 1 through 1000{
+  .padding-#{$i}{
+    padding: #{$i}px !important;
+  }
+}
